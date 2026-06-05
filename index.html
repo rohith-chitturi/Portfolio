@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chitturi Naga Raja Teja Rohith | Software Engineer & AI Systems Builder</title>
+    
+    <!-- SEO Optimization Meta Tags -->
+    <meta name="description" content="Official personal brand website of Chitturi Naga Raja Teja Rohith. Software Engineer, AI Systems Builder, and Full-Stack Developer engineering intelligent systems that transform complex data into actionable decisions.">
+    <meta name="keywords" content="Chitturi Naga Raja Teja Rohith, Software Engineer, AI Engineer, Full Stack Developer, CBIT, Hyderabad, Portfolio, SmartRetail AI, Second Brain AI, Throwball Live">
+    <meta name="author" content="Chitturi Naga Raja Teja Rohith">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rohithchitturi.dev/">
+    <meta property="og:title" content="Chitturi Naga Raja Teja Rohith | Software Engineer & AI Systems Builder">
+    <meta property="og:description" content="I engineer intelligent systems that transform complex data into actionable decisions. Explore my flagship projects, interactive systems architectures, and live engineering DNA.">
+    <meta property="og:image" content="assets/meta-cover.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://rohithchitturi.dev/">
+    <meta property="twitter:title" content="Chitturi Naga Raja Teja Rohith | Software Engineer & AI Systems Builder">
+    <meta property="twitter:description" content="I engineer intelligent systems that transform complex data into actionable decisions. Explore my flagship projects, interactive systems architectures, and live engineering DNA.">
+    <meta property="twitter:image" content="assets/meta-cover.png">
+
+    <!-- Premium Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animations.css">
+</head>
+<body>
+    <!-- Canvas for GPU-Accelerated Dynamic Particle Background -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Ambient Glow Blobs (Glassmorphism Light Effects) -->
+    <div class="glow-blob glow-1"></div>
+    <div class="glow-blob glow-2"></div>
+    <div class="glow-blob glow-3"></div>
+
+    <!-- Navigation Header -->
+    <header class="site-header">
+        <div class="header-container">
+            <a href="#" class="logo-link" id="logo">
+                <span class="logo-accent">&lt;</span>
+                <span class="logo-text">ROHITH</span>
+                <span class="logo-accent">.dev /&gt;</span>
+            </a>
+            
+            <nav class="main-nav" aria-label="Main Navigation">
+                <ul class="nav-list">
+                    <li><a href="#engineer" class="nav-link">The Engineer</a></li>
+                    <li><a href="#dna" class="nav-link">DNA</a></li>
+                    <li><a href="#systems" class="nav-link">Systems</a></li>
+                    <li><a href="#architecture-gallery" class="nav-link">Architecture</a></li>
+                    <li><a href="#journey" class="nav-link">Journey</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <!-- Voice Intro Button -->
+                <button id="voice-intro-btn" class="action-btn voice-btn" aria-label="Play Voice Introduction" title="Voice Introduction">
+                    <span class="wave-bar"></span>
+                    <span class="wave-bar"></span>
+                    <span class="wave-bar"></span>
+                    <span class="wave-bar"></span>
+                    <span class="wave-text">Voice Intro</span>
+                </button>
+                
+                <!-- Resume Trigger -->
+                <button id="view-resume-btn" class="action-btn resume-btn">
+                    <span>View Resume</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main>
+        <!-- LANDING HERO EXPERIENCE -->
+        <section id="hero" class="hero-section">
+            <div class="hero-grid-overlay"></div>
+            <div class="hero-content">
+                <div class="hero-terminal-pill">
+                    <span class="pulse-dot"></span>
+                    <span class="pill-text">Systems Configured & Operational</span>
+                </div>
+                
+                <!-- Typewriter Container -->
+                <h1 class="hero-typewriter" id="typewriter-text">
+                    <!-- Dynamic text will be injected by JavaScript -->
+                    <span class="text-cursor">|</span>
+                </h1>
+                
+                <!-- Brand Positioning Subtext (reveals after typewriter completion) -->
+                <div class="hero-reveal-content" id="hero-details">
+                    <p class="brand-statement">
+                        "I engineer intelligent systems that transform complex data into actionable decisions."
+                    </p>
+                    
+                    <div class="brand-titles">
+                        <span class="title-tag">Software Engineer</span>
+                        <span class="title-divider">•</span>
+                        <span class="title-tag">AI Systems Builder</span>
+                        <span class="title-divider">•</span>
+                        <span class="title-tag">Full-Stack Developer</span>
+                    </div>
+
+                    <!-- Scroll Down Prompt -->
+                    <div class="scroll-prompt-container">
+                        <a href="#engineer" class="scroll-down-indicator" aria-label="Scroll to Section 1">
+                            <span class="scroll-mouse">
+                                <span class="scroll-wheel"></span>
+                            </span>
+                            <span class="scroll-label">Initialize System Exploration</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Nodes Overlay Universe (rendered using interactive canvas logic inside hero) -->
+            <canvas id="universe-canvas"></canvas>
+        </section>
+
+        <!-- SECTION 1 — THE ENGINEER -->
+        <section id="engineer" class="section-container scroll-reveal">
+            <div class="section-label">Section 01 // The Engineer</div>
+            <h2 class="section-title">Engineering Intelligence Into Everyday Decisions</h2>
+            
+            <div class="engineer-grid">
+                <div class="engineer-card info-card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/></svg>
+                    </div>
+                    <h3>Academic Foundations</h3>
+                    <p>Rigorous computer science fundamentals combined with practical software engineering applications.</p>
+                    
+                    <div class="education-timeline">
+                        <div class="edu-item">
+                            <div class="edu-marker"></div>
+                            <div class="edu-details">
+                                <span class="edu-date">2024 — 2027</span>
+                                <h4>B.E. Information Technology</h4>
+                                <p class="edu-inst">Chaitanya Bharathi Institute of Technology (CBIT)</p>
+                                <div class="edu-gpa">CGPA: <strong>9.05</strong></div>
+                            </div>
+                        </div>
+                        <div class="edu-item">
+                            <div class="edu-marker"></div>
+                            <div class="edu-details">
+                                <span class="edu-date">2021 — 2024</span>
+                                <h4>Diploma in Computer Science & Engineering</h4>
+                                <p class="edu-inst">Samskruti College of Engineering</p>
+                                <div class="edu-gpa">CGPA: <strong>9.95</strong></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="engineer-card terminal-card">
+                    <div class="terminal-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="terminal-title">tejarohith ~ core_philosophy.py</span>
+                    </div>
+                    <div class="terminal-body">
+                        <pre><code><span class="keyword">class</span> <span class="class-name">Engineer</span>:
+    <span class="keyword">def</span> <span class="function">__init__</span>(self):
+        self.name = <span class="string">"Chitturi Naga Raja Teja Rohith"</span>
+        self.focus = [<span class="string">"AI Systems"</span>, <span class="string">"Distributed Infrastructure"</span>]
+        self.mentality = <span class="string">"Founder-minded Architect"</span>
+
+    <span class="keyword">def</span> <span class="function">solve</span>(self, problem, constraints):
+        <span class="comment"># Convert complex data into deterministic models</span>
+        pipeline = self.build_pipeline(problem)
+        optimized = pipeline.refactor_for_scale()
+        <span class="keyword">return</span> optimized.deploy_with_telemetry()
+
+    <span class="keyword">def</span> <span class="function">build_pipeline</span>(self, raw_input):
+        <span class="keyword">return</span> System(input=raw_input, intelligence=True)
+
+<span class="comment"># Instantiating the pipeline...</span>
+system_builder = Engineer()
+print(f<span class="string">"Status: Ready to engineer breakthroughs."</span>)</code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2 — IMPACT DASHBOARD -->
+        <section id="dashboard" class="section-container scroll-reveal">
+            <div class="section-label">Section 02 // Operational Telemetry</div>
+            <h2 class="section-title">Live Engineering Dashboard</h2>
+            
+            <div class="dashboard-grid">
+                <div class="dashboard-metric" data-metric="languages">
+                    <div class="metric-value" id="count-languages" data-target="4">0</div>
+                    <div class="metric-label">Programming Languages</div>
+                    <div class="metric-sub">Java, Python, C, C++</div>
+                    <div class="metric-bar"><div class="bar-fill" style="width: 85%;"></div></div>
+                </div>
+                
+                <div class="dashboard-metric" data-metric="projects">
+                    <div class="metric-value" id="count-projects" data-target="3">0</div>
+                    <div class="metric-label">Systems Engineered</div>
+                    <div class="metric-sub">AI & Live Real-Time Platforms</div>
+                    <div class="metric-bar"><div class="bar-fill" style="width: 90%;"></div></div>
+                </div>
+                
+                <div class="dashboard-metric" data-metric="databases">
+                    <div class="metric-value" id="count-databases" data-target="3">0</div>
+                    <div class="metric-label">Databases Worked With</div>
+                    <div class="metric-sub">MySQL, PostgreSQL, MongoDB</div>
+                    <div class="metric-bar"><div class="bar-fill" style="width: 75%;"></div></div>
+                </div>
+                
+                <div class="dashboard-metric" data-metric="frameworks">
+                    <div class="metric-value" id="count-frameworks" data-target="6">0</div>
+                    <div class="metric-label">Frameworks Mastered</div>
+                    <div class="metric-sub">React, Next.js, Node.js, Express, etc.</div>
+                    <div class="metric-bar"><div class="bar-fill" style="width: 80%;"></div></div>
+                </div>
+                
+                <div class="dashboard-metric" data-metric="ai">
+                    <div class="metric-value" id="count-ai" data-target="2">0</div>
+                    <div class="metric-label">AI Systems Implemented</div>
+                    <div class="metric-sub">Predictive SARIMA, LLM Analytics</div>
+                    <div class="metric-bar"><div class="bar-fill" style="width: 95%;"></div></div>
+                </div>
+                
+                <div class="dashboard-metric" data-metric="cgpa">
+                    <div class="metric-value" id="count-cgpa" data-target="9.05">0.0</div>
+                    <div class="metric-label">Academic Excellence</div>
+                    <div class="metric-sub">B.E. IT CGPA (Diploma: 9.95)</div>
+                    <div class="metric-bar"><div class="bar-fill" style="width: 99%;"></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3 — ENGINEERING DNA -->
+        <section id="dna" class="section-container scroll-reveal">
+            <div class="section-label">Section 03 // Core Architecture DNA</div>
+            <h2 class="section-title">Interactive Core Specializations</h2>
+            <p class="section-desc">Click on any core node to expand the engineering telemetry, stack tools, and real-world system implementations.</p>
+            
+            <div class="dna-interactive-container">
+                <!-- Left Hand Details Board -->
+                <div class="dna-details-panel" id="dna-details-panel">
+                    <div class="details-placeholder">
+                        <div class="pulse-radar"></div>
+                        <p>Hover or click on a node in the Neural Network to run DNA telemetry diagnostics.</p>
+                    </div>
+                </div>
+
+                <!-- Right Hand Neural Network Canvas -->
+                <div class="dna-canvas-wrapper">
+                    <canvas id="dna-network-canvas"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4 — FLAGSHIP SYSTEMS -->
+        <section id="systems" class="section-container scroll-reveal">
+            <div class="section-label">Section 04 // Production Deployments</div>
+            <h2 class="section-title">Systems I've Engineered</h2>
+            
+            <div class="systems-grid">
+                <!-- CARD 1: SmartRetail AI -->
+                <article class="system-card" id="system-smartretail">
+                    <div class="system-card-glow"></div>
+                    <div class="system-header">
+                        <span class="system-number">01</span>
+                        <div class="system-meta">
+                            <span class="status-indicator online"></span>
+                            <span class="system-status">Production Active</span>
+                        </div>
+                    </div>
+                    
+                    <h3 class="system-title">SmartRetail AI</h3>
+                    <p class="system-tagline">Conversational Business Intelligence Platform</p>
+                    
+                    <div class="system-pipeline-steps">
+                        <div class="step">
+                            <span class="step-label">Problem</span>
+                            <p class="step-text">Small retail businesses lacked accessible predictive forecasting, relying on complex manual Excel sheets to control inventory and predict trends.</p>
+                        </div>
+                        <div class="step">
+                            <span class="step-label">Solution Architecture</span>
+                            <p class="step-text">A modern Generative AI pipeline utilizing Vanna AI, converting NL to query SQL, integrated with SARIMA models for automated business insights.</p>
+                        </div>
+                    </div>
+
+                    <div class="system-tags-grid">
+                        <span>Generative AI</span>
+                        <span>SARIMA Forecast</span>
+                        <span>Vanna AI</span>
+                        <span>SQL Generator</span>
+                        <span>Python</span>
+                    </div>
+
+                    <button class="system-explore-btn" data-system="smartretail">Explore Pipeline Architecture &rarr;</button>
+                </article>
+
+                <!-- CARD 2: Second Brain AI -->
+                <article class="system-card" id="system-secondbrain">
+                    <div class="system-card-glow"></div>
+                    <div class="system-header">
+                        <span class="system-number">02</span>
+                        <div class="system-meta">
+                            <span class="status-indicator online"></span>
+                            <span class="system-status">Production Active</span>
+                        </div>
+                    </div>
+                    
+                    <h3 class="system-title">Second Brain AI</h3>
+                    <p class="system-tagline">AI Knowledge Operating System</p>
+                    
+                    <div class="system-pipeline-steps">
+                        <div class="step">
+                            <span class="step-label">Problem</span>
+                            <p class="step-text">Fragmented personal and team files result in massive knowledge fragmentation, rendering semantic search and summaries difficult on unstructured data.</p>
+                        </div>
+                        <div class="step">
+                            <span class="step-label">Solution Architecture</span>
+                            <p class="step-text">Supabase + PostgreSQL pgvector indexing for sub-second semantic search matching, coupled with Next.js, Gemini API, and auto-tagging pipelines.</p>
+                        </div>
+                    </div>
+
+                    <div class="system-tags-grid">
+                        <span>Next.js</span>
+                        <span>Supabase Vector</span>
+                        <span>PostgreSQL</span>
+                        <span>Gemini LLM</span>
+                        <span>Semantic Search</span>
+                    </div>
+
+                    <button class="system-explore-btn" data-system="secondbrain">Explore Memory Pipeline &rarr;</button>
+                </article>
+
+                <!-- CARD 3: Throwball Live -->
+                <article class="system-card" id="system-throwball">
+                    <div class="system-card-glow"></div>
+                    <div class="system-header">
+                        <span class="system-number">03</span>
+                        <div class="system-meta">
+                            <span class="status-indicator online"></span>
+                            <span class="system-status">Deployment Synced</span>
+                        </div>
+                    </div>
+                    
+                    <h3 class="system-title">Throwball Live</h3>
+                    <p class="system-tagline">Real-Time Event Infrastructure</p>
+                    
+                    <div class="system-pipeline-steps">
+                        <div class="step">
+                            <span class="step-label">Problem</span>
+                            <p class="step-text">Sports tournaments struggle with high latency updates, causing score mismatch across spectator screens under simultaneous concurrent loads.</p>
+                        </div>
+                        <div class="step">
+                            <span class="step-label">Solution Architecture</span>
+                            <p class="step-text">WebSocket (Socket.IO) server built on MERN framework, securing role-based administrative token authentication for safe referee updates.</p>
+                        </div>
+                    </div>
+
+                    <div class="system-tags-grid">
+                        <span>WebSockets</span>
+                        <span>Socket.IO</span>
+                        <span>React.js</span>
+                        <span>Express.js</span>
+                        <span>MongoDB</span>
+                    </div>
+
+                    <button class="system-explore-btn" data-system="throwball">Explore Live Infrastructure &rarr;</button>
+                </article>
+            </div>
+        </section>
+
+        <!-- SECTION 5 — SYSTEM ARCHITECTURE GALLERY -->
+        <section id="architecture-gallery" class="section-container scroll-reveal">
+            <div class="section-label">Section 05 // System Architecture Gallery</div>
+            <h2 class="section-title">Interactive Pipeline Architectures</h2>
+            <p class="section-desc">Observe the end-to-end data transit across backend engines, neural vectors, and database structures.</p>
+
+            <div class="gallery-wrapper">
+                <div class="gallery-tabs" role="tablist">
+                    <button class="tab-btn active" role="tab" aria-selected="true" data-target="arch-smartretail">SmartRetail AI</button>
+                    <button class="tab-btn" role="tab" aria-selected="false" data-target="arch-secondbrain">Second Brain AI</button>
+                    <button class="tab-btn" role="tab" aria-selected="false" data-target="arch-throwball">Throwball Live</button>
+                </div>
+
+                <div class="gallery-display-panel">
+                    <div class="diagram-container active" id="arch-smartretail">
+                        <!-- Interactive SVG Canvas will be drawn dynamically -->
+                        <div class="svg-diagram-wrapper" id="svg-smartretail-wrapper"></div>
+                        <div class="diagram-legend">
+                            <span class="legend-node"><span class="node-color query"></span>User Prompt (NL)</span>
+                            <span class="legend-node"><span class="node-color agent"></span>Vanna AI (SQL)</span>
+                            <span class="legend-node"><span class="node-color db"></span>Data Warehouse</span>
+                            <span class="legend-node"><span class="node-color engine"></span>SARIMA Engine</span>
+                            <span class="legend-node"><span class="node-color output"></span>Business Forecast</span>
+                        </div>
+                    </div>
+
+                    <div class="diagram-container" id="arch-secondbrain">
+                        <div class="svg-diagram-wrapper" id="svg-secondbrain-wrapper"></div>
+                        <div class="diagram-legend">
+                            <span class="legend-node"><span class="node-color query"></span>Raw File / Text</span>
+                            <span class="legend-node"><span class="node-color agent"></span>Gemini Embedding</span>
+                            <span class="legend-node"><span class="node-color db"></span>pgvector Index</span>
+                            <span class="legend-node"><span class="node-color engine"></span>Summarizer Node</span>
+                            <span class="legend-node"><span class="node-color output"></span>Semantic Retrieval</span>
+                        </div>
+                    </div>
+
+                    <div class="diagram-container" id="arch-throwball">
+                        <div class="svg-diagram-wrapper" id="svg-throwball-wrapper"></div>
+                        <div class="diagram-legend">
+                            <span class="legend-node"><span class="node-color query"></span>Referee Client (Auth)</span>
+                            <span class="legend-node"><span class="node-color agent"></span>WebSocket Gateway</span>
+                            <span class="legend-node"><span class="node-color db"></span>MongoDB Cluster</span>
+                            <span class="legend-node"><span class="node-color engine"></span>State Sync Engine</span>
+                            <span class="legend-node"><span class="node-color output"></span>Spectator Live Client</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 6 — ENGINEERING JOURNEY -->
+        <section id="journey" class="section-container scroll-reveal">
+            <div class="section-label">Section 06 // Timeline of Systems</div>
+            <h2 class="section-title">The Engineering Journey</h2>
+            
+            <div class="journey-timeline">
+                <div class="journey-node-line"></div>
+                
+                <div class="journey-card" data-year="2021">
+                    <div class="journey-badge">2021</div>
+                    <div class="journey-info">
+                        <h3>Started Diploma in CS</h3>
+                        <p>Began formal computer science foundation. Covered object-oriented programming, networks, structures, and algorithms.</p>
+                    </div>
+                </div>
+
+                <div class="journey-card" data-year="2024">
+                    <div class="journey-badge">2024</div>
+                    <div class="journey-info">
+                        <h3>Diploma Completed & CBIT Entry</h3>
+                        <p>Graduated with a CGPA of <strong>9.95</strong>. Entered Chaitanya Bharathi Institute of Technology (CBIT) for B.E. in IT.</p>
+                    </div>
+                </div>
+
+                <div class="journey-card" data-year="2025">
+                    <div class="journey-badge">2025</div>
+                    <div class="journey-info">
+                        <h3>Real-Time Infrastructure Development</h3>
+                        <p>Designed and deployed Throwball Live Scoring System using WebSockets handling concurrent live loads.</p>
+                        <div class="journey-meta">Runner-Up, Abacus Technical Quiz 2025</div>
+                    </div>
+                </div>
+
+                <div class="journey-card" data-year="2026">
+                    <div class="journey-badge">2026</div>
+                    <div class="journey-info">
+                        <h3>Generative AI & Forecast Engineering</h3>
+                        <p>Engineered predictive sales and analysis AI system (SmartRetail AI) and semantic document database (Second Brain AI).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 7 — RECOGNITION -->
+        <section id="recognition" class="section-container scroll-reveal">
+            <div class="section-label">Section 07 // Valuations & Credentials</div>
+            <h2 class="section-title">Industry Recognitions</h2>
+            
+            <div class="recognition-grid">
+                <div class="recognition-card">
+                    <div class="rec-icon">
+                        <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                    </div>
+                    <span class="rec-provider">MongoDB University</span>
+                    <h3>MongoDB Associate Developer</h3>
+                    <p>Certified in database architecture, index optimization, document modelling, and query building in Python applications.</p>
+                </div>
+
+                <div class="recognition-card">
+                    <div class="rec-icon">
+                        <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                    </div>
+                    <span class="rec-provider">Salesforce Trailhead</span>
+                    <h3>Salesforce Agentforce Specialist</h3>
+                    <p>Demonstrated capability to orchestrate autonomous AI agents, customize actions, and feed semantic prompt constraints.</p>
+                </div>
+
+                <div class="recognition-card">
+                    <div class="rec-icon">
+                        <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+                    </div>
+                    <span class="rec-provider">Abacus Technical Symposium</span>
+                    <h3>Technical Quiz Runner-Up</h3>
+                    <p>Awarded second place in the 2025 technical competition testing algorithms, systems architecture, and core computing networks.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 8 — DIGITAL PRESENCE (COMMAND CENTER) -->
+        <section id="presence" class="section-container scroll-reveal">
+            <div class="section-label">Section 08 // Operational Matrix</div>
+            <h2 class="section-title">Digital Command Center</h2>
+            <p class="section-desc">Interact with the terminal to inspect connections or view active code statistics.</p>
+
+            <div class="command-center-terminal">
+                <div class="terminal-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="terminal-title">system_host://command_center</span>
+                </div>
+                <div class="terminal-workspace">
+                    <div class="terminal-output" id="terminal-history">
+                        <div>Initializing connection to Rohith's digital command center...</div>
+                        <div>Connection established. Active pathways found:</div>
+                        <div>&gt; [1] Github Profile (rohith-chitturi)</div>
+                        <div>&gt; [2] LinkedIn Network (rohithchitturi-)</div>
+                        <div>&gt; [3] LeetCode Core (rohith_chitturi)</div>
+                        <div>Type <span class="highlight">help</span> to explore list of available query scripts.</div>
+                    </div>
+                    
+                    <!-- Graph overlay -->
+                    <div class="terminal-visual-panel">
+                        <div class="visual-header">Live Graph Representation</div>
+                        <canvas id="terminal-graph-canvas"></canvas>
+                    </div>
+                </div>
+                <div class="terminal-input-line">
+                    <span class="prompt-symbol">tejarohith$</span>
+                    <input type="text" id="terminal-cmd-input" placeholder="Type command here..." aria-label="Terminal command input">
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 9 — LET'S BUILD SOMETHING REMARKABLE -->
+        <section id="contact" class="section-container scroll-reveal">
+            <div class="section-label">Section 09 // Connection Protocol</div>
+            <h2 class="section-title">Let's Build Something Remarkable</h2>
+            
+            <div class="contact-grid">
+                <div class="contact-details">
+                    <h3>Open Opportunities</h3>
+                    <p>I am seeking pathways to deploy system intelligence and scale high-performance infrastructures.</p>
+                    
+                    <ul class="opportunities-list">
+                        <li>
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            <span>Software Engineering Internships</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            <span>Full Stack Development Roles</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            <span>AI Engineering Opportunities</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            <span>Research Collaborations</span>
+                        </li>
+                    </ul>
+
+                    <div class="personal-direct-links">
+                        <a href="mailto:chitturinagarajatejarohith@gmail.com" class="direct-link">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            <span>chitturinagarajatejarohith@gmail.com</span>
+                        </a>
+                        <div class="direct-link">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            <span>+91 8309149398</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Contact Form -->
+                <form id="contact-form" class="contact-form-glass">
+                    <div class="form-group">
+                        <label for="form-name">Name</label>
+                        <input type="text" id="form-name" required placeholder="e.g. Elena Rostova">
+                    </div>
+                    <div class="form-group">
+                        <label for="form-email">Corporate Email</label>
+                        <input type="email" id="form-email" required placeholder="name@company.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="form-message">Transmission Details</label>
+                        <textarea id="form-message" required placeholder="Discuss projects, roles, or scheduling a technical review..." rows="4"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        <span class="btn-glow"></span>
+                        <span class="btn-text">Transmit Message</span>
+                    </button>
+                    <div class="form-status" id="form-status"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <span class="logo-text">TEJA ROHITH</span>
+            </div>
+            <div class="footer-note">
+                "Designed and engineered by CHITTURI NAGA RAJA TEJA ROHITH."
+            </div>
+            <div class="footer-links">
+                <a href="https://github.com/rohith-chitturi" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://linkedin.com/in/rohithchitturi-" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://leetcode.com/u/rohith_chitturi/" target="_blank" rel="noopener">LeetCode</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE FLOATING AI CHATBOT -->
+    <div id="ai-assistant-widget" class="ai-widget-container">
+        <!-- Chat Toggle Button -->
+        <button id="ai-toggle-btn" class="ai-toggle-button" aria-label="Open AI Assistant" title="Resume AI Assistant">
+            <div class="ai-icon-pulse"></div>
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="chat-icon"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="close-icon hidden"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+
+        <!-- Chat Window (Glassmorphic) -->
+        <div id="ai-chat-window" class="ai-chat-box hidden">
+            <div class="chat-header">
+                <div class="chat-agent-info">
+                    <span class="agent-avatar">AI</span>
+                    <div>
+                        <h4>Rohith AI Assistant</h4>
+                        <span class="agent-status">Online (Resume Context V1.2)</span>
+                    </div>
+                </div>
+                <button id="chat-minimize" aria-label="Minimize Chat">&times;</button>
+            </div>
+            
+            <div class="chat-body" id="chat-messages">
+                <div class="message system-message">
+                    Hello! I'm Rohith's AI Assistant, synthesized using his detailed resume data. Ask me anything about his projects, credentials, coding abilities, or academic records.
+                </div>
+                <!-- Suggested Prompts -->
+                <div class="chat-suggestions">
+                    <button class="suggestion-chip">What is Rohith's CGPA?</button>
+                    <button class="suggestion-chip">Explain SmartRetail AI</button>
+                    <button class="suggestion-chip">Does he know Java?</button>
+                    <button class="suggestion-chip">Tell me about Second Brain AI</button>
+                </div>
+            </div>
+
+            <div class="chat-footer">
+                <input type="text" id="chat-input" placeholder="Query assistant..." aria-label="Message text">
+                <button id="chat-send-btn" aria-label="Send query">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- RESUME VIEWER MODAL -->
+    <div id="resume-modal" class="modal-overlay hidden">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3>Digital Document Review // Resume</h3>
+                <div class="modal-header-actions">
+                    <!-- Dynamic print or raw download link -->
+                    <button id="download-resume-btn" class="modal-action-btn primary" title="Download Document">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                        Download PDF
+                    </button>
+                    <button id="print-resume-btn" class="modal-action-btn" title="Print Document">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+                        Print/Save PDF
+                    </button>
+                    <button id="close-resume-btn" class="modal-close-btn" aria-label="Close modal">&times;</button>
+                </div>
+            </div>
+            
+            <div class="modal-body printable-resume" id="resume-print-area">
+                <!-- Premium HTML typeset resume inside the viewer, matching the provided LaTeX structure perfectly -->
+                <div class="resume-sheet">
+                    <header class="resume-header">
+                        <h1>CHITTURI NAGA RAJA TEJA ROHITH</h1>
+                        <p class="resume-meta">Hyderabad, India &nbsp;|&nbsp; +91 8309149398</p>
+                        <p class="resume-links">
+                            <a href="mailto:chitturinagarajatejarohith@gmail.com">chitturinagarajatejarohith@gmail.com</a> &nbsp;•&nbsp;
+                            <a href="https://linkedin.com/in/rohithchitturi-" target="_blank">LinkedIn</a> &nbsp;•&nbsp;
+                            <a href="https://github.com/rohith-chitturi" target="_blank">GitHub</a> &nbsp;•&nbsp;
+                            <a href="https://leetcode.com/u/rohith_chitturi/" target="_blank">LeetCode</a>
+                        </p>
+                    </header>
+
+                    <section class="resume-section-item">
+                        <h2>Professional Summary</h2>
+                        <p>Software Engineering student skilled in Java, Python, Data Structures, Algorithms, and Full-Stack Development with experience building scalable distributed systems and AI-powered applications. Proficient in REST APIs, databases, cloud deployment, and system design with strong problem-solving ability in fast-paced engineering environments.</p>
+                    </section>
+
+                    <section class="resume-section-item">
+                        <h2>Education</h2>
+                        <div class="resume-sub-heading">
+                            <div><strong>Chaitanya Bharathi Institute of Technology</strong></div>
+                            <div>2024 — 2027</div>
+                        </div>
+                        <div class="resume-sub-sub">
+                            <div>B.E. Information Technology</div>
+                            <div>CGPA: 9.05</div>
+                        </div>
+
+                        <div class="resume-sub-heading">
+                            <div><strong>Samskruti College of Engineering</strong></div>
+                            <div>2021 — 2024</div>
+                        </div>
+                        <div class="resume-sub-sub">
+                            <div>Diploma in Computer Science & Engineering</div>
+                            <div>CGPA: 9.95</div>
+                        </div>
+                    </section>
+
+                    <section class="resume-section-item">
+                        <h2>Technical Projects</h2>
+                        
+                        <div class="resume-sub-heading">
+                            <div><strong>SmartRetail AI – Conversational Predictive Analytics System</strong></div>
+                            <div>2026</div>
+                        </div>
+                        <div class="resume-sub-sub italic">Python, Vanna AI, SARIMA, Generative AI</div>
+                        <ul class="resume-bullets">
+                            <li>Designed and developed a Generative AI-based Business Intelligence system for small retail businesses.</li>
+                            <li>Integrated Vanna AI for conversational analytics and automated SQL generation from natural language queries.</li>
+                            <li>Implemented SARIMA-based time-series forecasting for sales prediction and seasonal demand analysis.</li>
+                            <li>Developed an AI-powered recommendation engine for automated business insights and inventory decision support.</li>
+                            <li>Optimized analytics workflow reducing manual analysis effort and enabling faster retail forecasting decisions.</li>
+                        </ul>
+
+                        <div class="resume-sub-heading">
+                            <div><strong>Second Brain AI – Knowledge Management System</strong></div>
+                            <div>2026</div>
+                        </div>
+                        <div class="resume-sub-sub italic">Next.js, Supabase, PostgreSQL, Gemini</div>
+                        <ul class="resume-bullets">
+                            <li>Built AI-powered system for semantic search over unstructured data, improving information retrieval efficiency.</li>
+                            <li>Developed scalable backend services handling concurrent requests with optimized database queries.</li>
+                            <li>Implemented automated summarization and tagging, reducing manual effort by 60%.</li>
+                            <li>Designed resilient APIs with retry logic ensuring high availability and fault tolerance.</li>
+                        </ul>
+
+                        <div class="resume-sub-heading">
+                            <div><strong>Throwball Live Scoring System</strong></div>
+                            <div>2025</div>
+                        </div>
+                        <div class="resume-sub-sub italic">MERN, Socket.IO, Render</div>
+                        <ul class="resume-bullets">
+                            <li>Engineered real-time scoring system using WebSockets for low-latency updates.</li>
+                            <li>Handled concurrent users during live events ensuring system reliability.</li>
+                            <li>Implemented role-based access control and secure authentication.</li>
+                            <li>Deployed production-ready system used in live tournament environment.</li>
+                        </ul>
+                    </section>
+
+                    <section class="resume-section-item">
+                        <h2>Core Technical Skills</h2>
+                        <p><strong>Languages:</strong> Java, Python, C, C++</p>
+                        <p><strong>Concepts:</strong> Data Structures, Algorithms, OOP, DBMS, Operating Systems, Computer Networks, SDLC, System Design</p>
+                        <p><strong>Web:</strong> HTML, CSS, JavaScript, React.js, Next.js</p>
+                        <p><strong>Backend:</strong> Node.js, Express.js, REST APIs</p>
+                        <p><strong>Databases:</strong> MySQL, PostgreSQL, MongoDB</p>
+                        <p><strong>Tools:</strong> Git, GitHub, Supabase, Firebase, AWS</p>
+                        <p><strong>Other:</strong> Authentication, Security, Debugging, Problem Solving, Agile Methodologies, Git Workflow</p>
+                    </section>
+
+                    <section class="resume-section-item">
+                        <h2>Certifications</h2>
+                        <ul class="resume-bullets no-margin">
+                            <li>MongoDB Associate Developer Certification – Python</li>
+                            <li>Salesforce Agentforce Specialist (AI-201)</li>
+                        </ul>
+                    </section>
+
+                    <section class="resume-section-item">
+                        <h2>Achievements</h2>
+                        <ul class="resume-bullets no-margin">
+                            <li>Runner-up, Abacus Technical Quiz 2025</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Core Scripts -->
+    <script src="js/particles.js"></script>
+    <script src="js/dna-network.js"></script>
+    <script src="js/ai-chatbot.js"></script>
+    <script src="js/voice-intro.js"></script>
+    <script src="js/architecture.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

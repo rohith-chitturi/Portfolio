@@ -1265,6 +1265,25 @@ body {
     flex-grow: 1;
 }
 
+.leetcode-stats-container {
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    background: var(--surface-darker);
+}
+
+#leetcode-stats-img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
 .terminal-input-line {
     background: rgba(15, 23, 42, 0.5);
     display: flex;
